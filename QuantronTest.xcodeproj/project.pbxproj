@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90842B03568E4F210196A3A4 /* Pods_QuantronTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640F470D2B69F903F3E11C39 /* Pods_QuantronTest.framework */; };
+		B53447A7235DB684007D73DA /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53447A6235DB684007D73DA /* HistoryViewController.swift */; };
+		B53447A9235DB694007D73DA /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53447A8235DB694007D73DA /* History.storyboard */; };
+		B53447AB235DBBAE007D73DA /* TranslatedWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53447AA235DBBAE007D73DA /* TranslatedWord.swift */; };
+		B53447B6235DDC24007D73DA /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53447B5235DDC24007D73DA /* RealmManager.swift */; };
+		B53447B8235DDE9F007D73DA /* TranslatedWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53447B7235DDE9F007D73DA /* TranslatedWord.swift */; };
+		B56E6A452358935100BCBD5B /* WordCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56E6A442358935100BCBD5B /* WordCard.storyboard */; };
+		B56E6A472358938500BCBD5B /* Languages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56E6A462358938500BCBD5B /* Languages.storyboard */; };
+		B56E6A4A2358A18F00BCBD5B /* UIStoryboard + InitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E6A492358A18F00BCBD5B /* UIStoryboard + InitViewController.swift */; };
+		B581F81C2357139C00E36294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581F81B2357139C00E36294 /* AppDelegate.swift */; };
+		B581F81E2357139C00E36294 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581F81D2357139C00E36294 /* TranslateViewController.swift */; };
+		B581F8212357139C00E36294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B581F81F2357139C00E36294 /* Main.storyboard */; };
+		B581F823235713A300E36294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B581F822235713A300E36294 /* Assets.xcassets */; };
+		B581F826235713A300E36294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B581F824235713A300E36294 /* LaunchScreen.storyboard */; };
+		B581F833235717E800E36294 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B581F832235717E800E36294 /* Client.swift */; };
+		B58B86922359920A00486AB7 /* UIViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B86912359920A00486AB7 /* UIViewController + Alert.swift */; };
+		B58B86942359923A00486AB7 /* String + Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58B86932359923A00486AB7 /* String + Localized.swift */; };
+		B590C9102357534500FC40D4 /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C90F2357534500FC40D4 /* LanguagesViewController.swift */; };
+		B590C9122357537B00FC40D4 /* WordCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C9112357537B00FC40D4 /* WordCardViewController.swift */; };
+		B590C9182357543100FC40D4 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C9172357543100FC40D4 /* CellViewModel.swift */; };
+		B590C9222357556400FC40D4 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C9202357556400FC40D4 /* LanguageTableViewCell.swift */; };
+		B590C9232357556400FC40D4 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B590C9212357556400FC40D4 /* LanguageTableViewCell.xib */; };
+		B590C92A2357558200FC40D4 /* TranslateResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C9282357558200FC40D4 /* TranslateResultTableViewCell.swift */; };
+		B590C92B2357558200FC40D4 /* TranslateResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B590C9292357558200FC40D4 /* TranslateResultTableViewCell.xib */; };
+		B590C92E2357558F00FC40D4 /* WordCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C92C2357558F00FC40D4 /* WordCardTableViewCell.swift */; };
+		B590C92F2357558F00FC40D4 /* WordCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B590C92D2357558F00FC40D4 /* WordCardTableViewCell.xib */; };
+		B590C931235755A700FC40D4 /* LanguageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C930235755A700FC40D4 /* LanguageCellViewModel.swift */; };
+		B590C935235755BF00FC40D4 /* TranslateResultCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C934235755BF00FC40D4 /* TranslateResultCellViewModel.swift */; };
+		B590C937235755CC00FC40D4 /* WordCardCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B590C936235755CC00FC40D4 /* WordCardCellViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		157BBD84A73F3DF309F15D4E /* Pods-QuantronTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantronTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuantronTest/Pods-QuantronTest.release.xcconfig"; sourceTree = "<group>"; };
+		3BEAE7F4B1C623D5BE6E53FF /* Pods-QuantronTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuantronTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuantronTest/Pods-QuantronTest.debug.xcconfig"; sourceTree = "<group>"; };
+		640F470D2B69F903F3E11C39 /* Pods_QuantronTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuantronTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53447A6235DB684007D73DA /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B53447A8235DB694007D73DA /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		B53447AA235DBBAE007D73DA /* TranslatedWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatedWord.swift; sourceTree = "<group>"; };
+		B53447B5235DDC24007D73DA /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B53447B7235DDE9F007D73DA /* TranslatedWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatedWord.swift; sourceTree = "<group>"; };
+		B56E6A442358935100BCBD5B /* WordCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WordCard.storyboard; sourceTree = "<group>"; };
+		B56E6A462358938500BCBD5B /* Languages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Languages.storyboard; sourceTree = "<group>"; };
+		B56E6A492358A18F00BCBD5B /* UIStoryboard + InitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard + InitViewController.swift"; sourceTree = "<group>"; };
+		B581F8182357139C00E36294 /* QuantronTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantronTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B581F81B2357139C00E36294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B581F81D2357139C00E36294 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		B581F8202357139C00E36294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B581F822235713A300E36294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B581F825235713A300E36294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B581F827235713A300E36294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B581F832235717E800E36294 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		B58B86912359920A00486AB7 /* UIViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alert.swift"; sourceTree = "<group>"; };
+		B58B86932359923A00486AB7 /* String + Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Localized.swift"; sourceTree = "<group>"; };
+		B590C90F2357534500FC40D4 /* LanguagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
+		B590C9112357537B00FC40D4 /* WordCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardViewController.swift; sourceTree = "<group>"; };
+		B590C9172357543100FC40D4 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		B590C9202357556400FC40D4 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
+		B590C9212357556400FC40D4 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
+		B590C9282357558200FC40D4 /* TranslateResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResultTableViewCell.swift; sourceTree = "<group>"; };
+		B590C9292357558200FC40D4 /* TranslateResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslateResultTableViewCell.xib; sourceTree = "<group>"; };
+		B590C92C2357558F00FC40D4 /* WordCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardTableViewCell.swift; sourceTree = "<group>"; };
+		B590C92D2357558F00FC40D4 /* WordCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCardTableViewCell.xib; sourceTree = "<group>"; };
+		B590C930235755A700FC40D4 /* LanguageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCellViewModel.swift; sourceTree = "<group>"; };
+		B590C934235755BF00FC40D4 /* TranslateResultCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResultCellViewModel.swift; sourceTree = "<group>"; };
+		B590C936235755CC00FC40D4 /* WordCardCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCardCellViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B581F8152357139C00E36294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90842B03568E4F210196A3A4 /* Pods_QuantronTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3963D540412954E9C3E3B932 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BEAE7F4B1C623D5BE6E53FF /* Pods-QuantronTest.debug.xcconfig */,
+				157BBD84A73F3DF309F15D4E /* Pods-QuantronTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B56E6A4B2358C82800BCBD5B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B58B86932359923A00486AB7 /* String + Localized.swift */,
+				B58B86912359920A00486AB7 /* UIViewController + Alert.swift */,
+				B56E6A492358A18F00BCBD5B /* UIStoryboard + InitViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B581F80F2357139C00E36294 = {
+			isa = PBXGroup;
+			children = (
+				B581F81A2357139C00E36294 /* QuantronTest */,
+				B581F8192357139C00E36294 /* Products */,
+				3963D540412954E9C3E3B932 /* Pods */,
+				FEA6D346E5E19EF9DD1BD5B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B581F8192357139C00E36294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B581F8182357139C00E36294 /* QuantronTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B581F81A2357139C00E36294 /* QuantronTest */ = {
+			isa = PBXGroup;
+			children = (
+				B581F81B2357139C00E36294 /* AppDelegate.swift */,
+				B56E6A4B2358C82800BCBD5B /* Extensions */,
+				B581F82D235713F200E36294 /* Models */,
+				B581F82E235713F600E36294 /* Views */,
+				B581F82F235713FB00E36294 /* Controllers */,
+				B590C91B235754B400FC40D4 /* Cells */,
+				B581F8302357140E00E36294 /* Support Files */,
+			);
+			path = QuantronTest;
+			sourceTree = "<group>";
+		};
+		B581F82D235713F200E36294 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B581F832235717E800E36294 /* Client.swift */,
+				B53447AA235DBBAE007D73DA /* TranslatedWord.swift */,
+				B53447B5235DDC24007D73DA /* RealmManager.swift */,
+				B53447B7235DDE9F007D73DA /* TranslatedWord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B581F82E235713F600E36294 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B581F81F2357139C00E36294 /* Main.storyboard */,
+				B56E6A442358935100BCBD5B /* WordCard.storyboard */,
+				B56E6A462358938500BCBD5B /* Languages.storyboard */,
+				B53447A8235DB694007D73DA /* History.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B581F82F235713FB00E36294 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B581F81D2357139C00E36294 /* TranslateViewController.swift */,
+				B590C90F2357534500FC40D4 /* LanguagesViewController.swift */,
+				B590C9112357537B00FC40D4 /* WordCardViewController.swift */,
+				B53447A6235DB684007D73DA /* HistoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B581F8302357140E00E36294 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B590C9162357542100FC40D4 /* Helpers */,
+				B581F822235713A300E36294 /* Assets.xcassets */,
+				B581F824235713A300E36294 /* LaunchScreen.storyboard */,
+				B581F827235713A300E36294 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		B590C9162357542100FC40D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B590C9172357543100FC40D4 /* CellViewModel.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B590C91B235754B400FC40D4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B590C91C2357550700FC40D4 /* Language */,
+				B590C91E2357552C00FC40D4 /* TranslateResult */,
+				B590C91D2357551000FC40D4 /* WordCard */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B590C91C2357550700FC40D4 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				B590C9202357556400FC40D4 /* LanguageTableViewCell.swift */,
+				B590C9212357556400FC40D4 /* LanguageTableViewCell.xib */,
+				B590C930235755A700FC40D4 /* LanguageCellViewModel.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		B590C91D2357551000FC40D4 /* WordCard */ = {
+			isa = PBXGroup;
+			children = (
+				B590C92C2357558F00FC40D4 /* WordCardTableViewCell.swift */,
+				B590C92D2357558F00FC40D4 /* WordCardTableViewCell.xib */,
+				B590C936235755CC00FC40D4 /* WordCardCellViewModel.swift */,
+			);
+			path = WordCard;
+			sourceTree = "<group>";
+		};
+		B590C91E2357552C00FC40D4 /* TranslateResult */ = {
+			isa = PBXGroup;
+			children = (
+				B590C9282357558200FC40D4 /* TranslateResultTableViewCell.swift */,
+				B590C9292357558200FC40D4 /* TranslateResultTableViewCell.xib */,
+				B590C934235755BF00FC40D4 /* TranslateResultCellViewModel.swift */,
+			);
+			path = TranslateResult;
+			sourceTree = "<group>";
+		};
+		FEA6D346E5E19EF9DD1BD5B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				640F470D2B69F903F3E11C39 /* Pods_QuantronTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B581F8172357139C00E36294 /* QuantronTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B581F82A235713A300E36294 /* Build configuration list for PBXNativeTarget "QuantronTest" */;
+			buildPhases = (
+				2CC7A0343020613A52D56FDC /* [CP] Check Pods Manifest.lock */,
+				B581F8142357139C00E36294 /* Sources */,
+				B581F8152357139C00E36294 /* Frameworks */,
+				B581F8162357139C00E36294 /* Resources */,
+				45043E89F19EBDA2E8F564EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuantronTest;
+			productName = QuantronTest;
+			productReference = B581F8182357139C00E36294 /* QuantronTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B581F8102357139C00E36294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Alexandr Kostiukevich";
+				TargetAttributes = {
+					B581F8172357139C00E36294 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B581F8132357139C00E36294 /* Build configuration list for PBXProject "QuantronTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B581F80F2357139C00E36294;
+			productRefGroup = B581F8192357139C00E36294 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B581F8172357139C00E36294 /* QuantronTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B581F8162357139C00E36294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B581F826235713A300E36294 /* LaunchScreen.storyboard in Resources */,
+				B590C92F2357558F00FC40D4 /* WordCardTableViewCell.xib in Resources */,
+				B56E6A472358938500BCBD5B /* Languages.storyboard in Resources */,
+				B53447A9235DB694007D73DA /* History.storyboard in Resources */,
+				B590C9232357556400FC40D4 /* LanguageTableViewCell.xib in Resources */,
+				B581F823235713A300E36294 /* Assets.xcassets in Resources */,
+				B56E6A452358935100BCBD5B /* WordCard.storyboard in Resources */,
+				B590C92B2357558200FC40D4 /* TranslateResultTableViewCell.xib in Resources */,
+				B581F8212357139C00E36294 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CC7A0343020613A52D56FDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuantronTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45043E89F19EBDA2E8F564EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuantronTest/Pods-QuantronTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuantronTest/Pods-QuantronTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B581F8142357139C00E36294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56E6A4A2358A18F00BCBD5B /* UIStoryboard + InitViewController.swift in Sources */,
+				B590C937235755CC00FC40D4 /* WordCardCellViewModel.swift in Sources */,
+				B590C92E2357558F00FC40D4 /* WordCardTableViewCell.swift in Sources */,
+				B581F81E2357139C00E36294 /* TranslateViewController.swift in Sources */,
+				B581F81C2357139C00E36294 /* AppDelegate.swift in Sources */,
+				B53447B6235DDC24007D73DA /* RealmManager.swift in Sources */,
+				B590C92A2357558200FC40D4 /* TranslateResultTableViewCell.swift in Sources */,
+				B53447B8235DDE9F007D73DA /* TranslatedWord.swift in Sources */,
+				B590C9102357534500FC40D4 /* LanguagesViewController.swift in Sources */,
+				B58B86942359923A00486AB7 /* String + Localized.swift in Sources */,
+				B590C931235755A700FC40D4 /* LanguageCellViewModel.swift in Sources */,
+				B590C935235755BF00FC40D4 /* TranslateResultCellViewModel.swift in Sources */,
+				B58B86922359920A00486AB7 /* UIViewController + Alert.swift in Sources */,
+				B53447AB235DBBAE007D73DA /* TranslatedWord.swift in Sources */,
+				B590C9182357543100FC40D4 /* CellViewModel.swift in Sources */,
+				B590C9222357556400FC40D4 /* LanguageTableViewCell.swift in Sources */,
+				B53447A7235DB684007D73DA /* HistoryViewController.swift in Sources */,
+				B581F833235717E800E36294 /* Client.swift in Sources */,
+				B590C9122357537B00FC40D4 /* WordCardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B581F81F2357139C00E36294 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B581F8202357139C00E36294 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B581F824235713A300E36294 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B581F825235713A300E36294 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B581F828235713A300E36294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B581F829235713A300E36294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B581F82B235713A300E36294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BEAE7F4B1C623D5BE6E53FF /* Pods-QuantronTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6YTXPQ772;
+				INFOPLIST_FILE = "$(SRCROOT)/QuantronTest/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AK.QuantronTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B581F82C235713A300E36294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 157BBD84A73F3DF309F15D4E /* Pods-QuantronTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6YTXPQ772;
+				INFOPLIST_FILE = "$(SRCROOT)/QuantronTest/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AK.QuantronTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B581F8132357139C00E36294 /* Build configuration list for PBXProject "QuantronTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B581F828235713A300E36294 /* Debug */,
+				B581F829235713A300E36294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B581F82A235713A300E36294 /* Build configuration list for PBXNativeTarget "QuantronTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B581F82B235713A300E36294 /* Debug */,
+				B581F82C235713A300E36294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B581F8102357139C00E36294 /* Project object */;
+}

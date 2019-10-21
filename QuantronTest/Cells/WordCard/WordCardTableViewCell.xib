@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="WordCardTableViewCell" customModule="QuantronTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iy8-w7-GNX">
+                        <rect key="frame" x="16" y="45" width="81" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wK-Y2-qhc">
+                        <rect key="frame" x="105" y="45" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxe-BS-xhE">
+                        <rect key="frame" x="16" y="11" width="46" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyf-I7-M9R">
+                        <rect key="frame" x="70" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Nyf-I7-M9R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9Cu-Mi-xBz"/>
+                    <constraint firstItem="wxe-BS-xhE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="EKE-sq-DcY"/>
+                    <constraint firstItem="3wK-Y2-qhc" firstAttribute="leading" secondItem="iy8-w7-GNX" secondAttribute="trailing" constant="8" id="FAQ-KV-s9c"/>
+                    <constraint firstItem="Nyf-I7-M9R" firstAttribute="leading" secondItem="wxe-BS-xhE" secondAttribute="trailing" constant="8" id="HJp-h7-DTm"/>
+                    <constraint firstItem="iy8-w7-GNX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="KdX-0b-377"/>
+                    <constraint firstItem="iy8-w7-GNX" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="QYJ-l1-Zba"/>
+                    <constraint firstItem="iy8-w7-GNX" firstAttribute="top" secondItem="wxe-BS-xhE" secondAttribute="bottom" constant="13" id="ftS-0u-CTg"/>
+                    <constraint firstItem="3wK-Y2-qhc" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="ipp-rs-ibW"/>
+                    <constraint firstItem="3wK-Y2-qhc" firstAttribute="top" secondItem="Nyf-I7-M9R" secondAttribute="bottom" constant="13" id="ksu-VL-ZHS"/>
+                    <constraint firstItem="wxe-BS-xhE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="zrG-ke-VGJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="LanguageLabel" destination="3wK-Y2-qhc" id="Wft-CB-9HG"/>
+                <outlet property="WordLabel" destination="Nyf-I7-M9R" id="hDA-fd-giT"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="169.56521739130437"/>
+        </tableViewCell>
+    </objects>
+</document>
